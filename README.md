@@ -3,7 +3,7 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/zombieanfuehrer/avr-gcc-conan-cmake)
 ![Docker Stars](https://img.shields.io/docker/stars/zombieanfuehrer/avr-gcc-conan-cmake)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Zombieanfuehrer/avr-gcc-build-contianer)
-![GitHub workflow status](https://img.shields.io/github/actions/workflow/status/Zombieanfuehrer/avr-gcc-build-contianer/docker-image.yml)
+![GitHub workflow status](https://img.shields.io/github/actions/workflow/status/Zombieanfuehrer/avr-gcc-build-contianer/docker-publish.yml)
 
 ## Description
 
@@ -21,3 +21,5 @@ In general, this Contianer image is for a server build which is executed via Git
 ### License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+David A. Haufe
