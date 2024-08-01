@@ -2,8 +2,8 @@
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/zombieanfuehrer/avr-gcc-conan-cmake)
 ![Docker Stars](https://img.shields.io/docker/stars/zombieanfuehrer/avr-gcc-conan-cmake)
-![GitHub last commit](https://img.shields.io/github/last-commit/Zombieanfuehrer /https://github.com/Zombieanfuehrer/avr-gcc-build-contianer)
-![GitHub workflow status](https://img.shields.io/github/actions/workflow/status/Zombieanfuehrer /https://github.com/Zombieanfuehrer/avr-gcc-build-contianer/docker-image.yml)
+![GitHub last commit](https://img.shields.io/github/last-commit/Zombieanfuehrer/avr-gcc-build-contianer)
+![GitHub workflow status](https://img.shields.io/github/actions/workflow/status/Zombieanfuehrer/avr-gcc-build-contianer/docker-image.yml)
 
 ## Description
 
