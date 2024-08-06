@@ -10,4 +10,6 @@ RUN /opt/venv/bin/pip install conan
 RUN /opt/venv/bin/conan profile detect
 RUN cd ~/.conan2/profiles && git clone https://github.com/Zombieanfuehrer/conan-profiles-linux.git
 
+ENV PATH="/opt/avr8-gnu-toolchain-linux_x86_64/bin:/opt/venv/bin:${PATH}"
+
 WORKDIR /firmware
