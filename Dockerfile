@@ -7,9 +7,22 @@ RUN chown -R root:root /opt/avr8-gnu-toolchain-linux_x86_64
 RUN python3 -m venv /opt/venv
 RUN /opt/venv/bin/pip install --upgrade pip
 RUN /opt/venv/bin/pip install conan
-RUN /opt/venv/bin/conan profile detect
-RUN cd ~/.conan2/profiles && git clone https://github.com/Zombieanfuehrer/conan-profiles-linux.git
 
-ENV PATH="/opt/avr8-gnu-toolchain-linux_x86_64/bin:/opt/venv/bin:${PATH}"
+# Detect conan profile
+RUN /opt/venv/bin/conan profile detect
+
+# Clone conan profiles and check for specific files
+RUN rm -rf ~/.conan2/profiles && \
+    git clone https://github.com/Zombieanfuehrer/conan-profiles-linux.git ~/.conan2/profiles && \
+    cd ~/.conan2/profiles && \
+    if [ -f "avr-mega328p" ] && [ -f "avr-mega328p_g" ]; then \
+        ln -s avr-mega328p_g default; \
+    else \
+        echo "Required files not found"; \
+        exit 1; \
+    fi
+
+# Add venv bin directory to PATH
+ENV PATH="/opt/venv/bin:$PATH"
 
 WORKDIR /firmware
