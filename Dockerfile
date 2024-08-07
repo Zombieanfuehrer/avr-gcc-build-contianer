@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     python3-venv \
     python3-pip \
     wget \
+    doxygen \
     && rm -rf /var/lib/apt/lists/*
 
 RUN cd /opt/ && wget https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/avr8-gnu-toolchain-3.7.0.1796-linux.any.x86_64.tar.gz \
