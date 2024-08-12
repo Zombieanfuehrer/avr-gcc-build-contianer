@@ -27,6 +27,7 @@ RUN rm -rf ~/.conan2/profiles && \
     git clone https://github.com/Zombieanfuehrer/conan-profiles-linux.git ~/.conan2/profiles && \
     cd ~/.conan2/profiles && \
     if [ -f "avr-mega328p" ] && [ -f "avr-mega328p_g" ]; then \
+				rm default; \
         ln -s avr-mega328p_g default; \
     else \
         echo "Required files not found"; \
